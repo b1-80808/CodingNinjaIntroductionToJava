@@ -8,7 +8,6 @@ public class Multiplication_Table {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Number:- ");
 		int num = sc.nextInt();
-		
 		for (int i = 1 ;i<=10;i++)
 		{
 			System.out.println(num * i);
