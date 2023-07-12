@@ -13,10 +13,12 @@ public class PractiseProblem5 {
 		for(int i=2;i<=number;i++)
 		{
 			System.out.print(i-1);
+			
 			for(int j=1;j<=i-2;j++)
 			{
 				System.out.print(0);
 			}
+			
 			System.out.println(i-1);
 		}
 	}
