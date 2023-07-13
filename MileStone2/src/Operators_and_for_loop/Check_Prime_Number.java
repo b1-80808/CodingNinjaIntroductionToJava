@@ -8,6 +8,10 @@ public class Check_Prime_Number {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Number:- ");
 		int number = sc.nextInt();
+		if(number ==1 || number ==0)
+		{
+			System.out.println(number + "Number is Not Prime.");
+		}
 		for(int i=2;i<number;i++)
 		{
 			if(number % i == 0)
