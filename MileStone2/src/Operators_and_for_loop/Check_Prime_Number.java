@@ -10,7 +10,8 @@ public class Check_Prime_Number {
 		int number = sc.nextInt();
 		if(number ==1 || number ==0)
 		{
-			System.out.println(number + "Number is Not Prime.");
+			System.out.println(number + "Number is Not Prime Nor composite.");
+			return;
 		}
 		for(int i=2;i<number;i++)
 		{
