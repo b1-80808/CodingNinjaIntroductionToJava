@@ -13,10 +13,11 @@ public class Sum_Of_Two_Numbers {
 					 number1 = sc.nextInt();
 					System.out.println("Enter Second Number:- ");
 					number2 = sc.nextInt();
+					
 				}catch(Exception e)
 				{
 					System.out.println("Enter Number in Integer Format Only!!!!!!!!");
-					 continue;
+			jlkjaskljdfljl
 				}
 			}
 		int result = number1 + number2;
