@@ -6,16 +6,19 @@ public class Sum_Of_Two_Numbers {
 	{
 		Scanner sc = new Scanner(System.in);
 		int number1 =0,number2 =0;
-		try {
-			System.out.println("Enter first number : ");
-			 number1 = sc.nextInt();
-			System.out.println("Enter Second Number:- ");
-			number2 = sc.nextInt();
-		}catch(Exception e)
-		{
-			System.out.println("Enter Number in Integer Format Only!!!!!!!!");
-		}
-		
+			while(true)
+			{
+				try {
+					System.out.println("Enter first number : ");
+					 number1 = sc.nextInt();
+					System.out.println("Enter Second Number:- ");
+					number2 = sc.nextInt();
+				}catch(Exception e)
+				{
+					System.out.println("Enter Number in Integer Format Only!!!!!!!!");
+					 continue;
+				}
+			}
 		int result = number1 + number2;
 		System.out.println("Result " + result);
 	}
