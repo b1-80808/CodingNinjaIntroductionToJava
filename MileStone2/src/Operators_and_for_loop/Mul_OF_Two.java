@@ -14,6 +14,8 @@ public class Mul_OF_Two {
 		System.out.println("Multiplication:- "+ result);
 		int result1 = number1/number2;
 		System.out.println("Division:- " + result1);
+		int result2 = number2-number1;
+		System.out.println("Substraction:- " + result2);
 
 	}
 
