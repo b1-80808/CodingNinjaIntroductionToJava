@@ -6,8 +6,7 @@ public class Sum_Of_Two_Numbers {
 	{
 		Scanner sc = new Scanner(System.in);
 		int number1 =0,number2 =0;
-			while(true)
-			{
+			
 				try {
 					System.out.println("Enter first number : ");
 					 number1 = sc.nextInt();
@@ -17,9 +16,8 @@ public class Sum_Of_Two_Numbers {
 				}catch(Exception e)
 				{
 					System.out.println("Enter Number in Integer Format Only!!!!!!!!");
-			jlkjaskljdfljl
+			
 				}
-			}
 		int result = number1 + number2;
 		System.out.println("Result " + result);
 	}
