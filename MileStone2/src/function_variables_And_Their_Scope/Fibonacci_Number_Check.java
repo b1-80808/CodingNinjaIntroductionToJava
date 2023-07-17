@@ -3,34 +3,33 @@ package function_variables_And_Their_Scope;
 import java.util.Scanner;
 
 public class Fibonacci_Number_Check {
+
 	public static void main(String args[])
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Number:- ");
+		System.out.print("Number:- ");
 		int number = sc.nextInt();
-		int a = 0;
-		int b = 1;
-		boolean result = false;
-		int temp;
-		if(number==a || number == b)
-		{
-			System.out.println("Number is Found in Fibonacci Series!!");
-			result = true;
-		}
-		
+		boolean check = fibonacci_check(number);
+		if(check == true)
+			System.out.println("Number occurs in Fibonacci Series!!!");
+		else
+			System.out.println("Number does not occurs in Fibonacci Series!!!");
+	}
+	
+	public static boolean fibonacci_check(int number)
+	{
+		int temp,a = 0,b = 1;
+		if(number ==0 || number ==1)
+			return true;
 		for(int i=1;i<=number;i++)
 		{
 			temp = a+b;
 			if(number == temp)
-			{
-				System.out.println("Number is Found in Fibonacci Series!!");
-				result = true;
-				break;
-			}
+				return true;
 			a=b;
 			b=temp;
 		}
-		if(result == false)
-		System.out.println("Number is Not Found In Fibonacci Series!!!!");
+		return false;
+		
 	}
 }
