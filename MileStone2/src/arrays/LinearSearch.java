@@ -7,9 +7,7 @@ public class LinearSearch {
 	{
 		int arr[]=input();
 		boolean isfound = linearSearch(arr);
-		if(isfound==true)
-			System.out.println("Element is found!!!");
-		else
+		if(isfound == false)
 			System.out.println("Element is not found!!!");
 	}
 	
@@ -37,6 +35,7 @@ public class LinearSearch {
 		for(int i=0;i<arr.length;i++)
 		{
 			if(key == arr[i])
+				System.out.println("Element found in "+ i +" Position!!!");
 				return true;
 		}
 		return false;
