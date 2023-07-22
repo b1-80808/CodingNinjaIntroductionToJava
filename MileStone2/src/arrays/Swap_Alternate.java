@@ -35,8 +35,6 @@ public class Swap_Alternate {
 	{
 		for(int i=0,j=i+1;i<arr.length-1;i=i+2)
 		{
-			if(j>=arr.length)
-				break;
 			arr[i] = arr[i] + arr[j];
 			arr[j] = arr[i] - arr[j];
 			arr[i] = arr[i] - arr[j];
