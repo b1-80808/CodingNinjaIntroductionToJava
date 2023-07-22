@@ -12,7 +12,7 @@ public class swap_two_logic {
 		int num2 = sc.nextInt();
 		num1 = num1 + num2;
 		num2 = num1 - num2;
-		num1 = num1 - num2;
+		num1 = num1 - num1;
 		
 		System.out.println("Number1:-" + num1 + "\nNumber2:-" + num2);
 		
