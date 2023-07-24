@@ -34,7 +34,7 @@ public class Find_Unique {
 	                  isUnique = true;
 	                  break;
 	                }
-	          } //comment
+	          } 
 	        }
 	        if(!isUnique)
 	          return arr[i];
